@@ -42,7 +42,7 @@
       background: #19B3D3;
       text-decoration: none;
       float: right;
-      margin-top: -30px;
+      margin-top: -44px;
       margin-right: 40px;
       border-radius: 2px;
       font-size: 15px;
@@ -59,7 +59,7 @@
     .sidebar {
       background: #2f323a;
       margin-top: 70px;
-      padding-top: 30px;
+      padding-top: 100px;
       position: fixed;
       left: 0;
       width: 250px;
@@ -138,6 +138,7 @@
       background-size: cover;
       height: 100vh;
       transition: 0.5s;
+      padding-top: 160px
     }
 
     #check:checked~.content {
@@ -146,6 +147,12 @@
 
     #check {
       display: none;
+    }
+
+    .logo1 {
+    margin-top: -18px;
+    width: 80px;
+    height: 60px;
     }
   </style>
 
@@ -164,7 +171,7 @@
       <i style="left: 200px;margin-top: 17px;"class="fas fa-bars" id="sidebar_btn"></i>
     </label>
     <div class="left_area">
-      <h3>Online Quiz</h3>
+      <a class="Logo"><img src="/static/image/logo.png" class="logo1"></a>
     </div>
     <div class="right_area">
       <a href="/logout" class="logout_btn">Logout</a>
@@ -177,13 +184,13 @@
 
       <img src="{% static "image/student.png" %}" class="profile_image" alt="">
       <h4>{{request.user.first_name}}</h4>
-      <h6 style="color: rgb(255, 255, 255);">( Student )</h6>
+      <h6 style="color: rgb(255, 255, 255);">Xodim</h6>
 
     </center>
 
     <a href="/student/student-dashboard"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
-    <a href="/student/student-exam"><i class="fas fa-book"></i><span>Exam</span></a>
-    <a href="/student/student-marks"><i class="fas fa-sort-numeric-up"></i><span>Marks</span></a>
+    <a href="/student/student-exam"><i class="fas fa-book"></i><span>Imtihon</span></a>
+    <a href="/student/student-marks"><i class="fas fa-sort-numeric-up"></i><span>Natijalar</span></a>
   </div>
   <!--sidebar end-->
 

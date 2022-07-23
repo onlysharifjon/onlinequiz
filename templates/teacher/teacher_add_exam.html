@@ -17,14 +17,14 @@
     
   </style>
 </head>
-<h2 style="text-align:center; color:blue;">ADD COURSE</h2>
+<h2 style="text-align:center; color:blue;">Guruh qo`shish</h2>
 <form method="POST" autocomplete="off" style="margin:100px;margin-top: 0px;">
     {%csrf_token%}
     <div class="form-group">
-      <label for="course_name">Exam Name</label>
+      <label for="course_name">Imtihon Nomi</label>
       {% render_field courseForm.course_name class="form-control" placeholder="Java" %}
 
-      <label for="question_number">Total Question</label>
+      <label for="question_number">Barcha savollar</label>
       {% render_field courseForm.question_number class="form-control" placeholder="10" %}
 
       <label for="total_marks">Total Marks</label>

@@ -20,9 +20,10 @@
     header {
       position: fixed;
       background: #22242A;
-      padding: 20px;
+      padding: 0px;
       width: 100%;
       z-index: 1;
+
     }
 
     .left_area h3 {
@@ -147,10 +148,20 @@
     #check {
       display: none;
     }
+
+    .logo {
+    width: 75px;
+    height: 60px;
+    allign-items:center;
+    }
   </style>
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
 
 </head>
@@ -164,7 +175,7 @@
       <i style="left: 200px;margin-top: 17px;"class="fas fa-bars" id="sidebar_btn"></i>
     </label>
     <div class="left_area">
-      <h3>Online Quiz</h3>
+      <a class="Logo"> <img src="/static/image/logo.png" class = "logo"> </a>
     </div>
     <div class="right_area">
       <a href="/logout" class="logout_btn">Logout</a>
@@ -181,10 +192,10 @@
     </center>
 
     <a href="/admin-dashboard"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
-    <a href="/admin-teacher"><i class="fas fa-chalkboard-teacher"></i><span>Teacher</span></a>
-    <a href="/admin-student"><i class="fas fa-user-graduate"></i><span>Student</span></a>
-    <a href="/admin-course"><i class="fas fa-book"></i><span>Courses</span></a>
-    <a href="/admin-question"><i class="fas fa-question-circle"></i><span>Questions</span></a>
+    <a href="/admin-teacher"><i class="fas fa-chalkboard-teacher"></i><span>Testerlar</span></a>
+    <a href="/admin-student"><i style="font-size: 22Fpx" class='bx bxs-user-circle'></i><span>Xodimlar</span></a>
+    <a href="/admin-course"><i class="fas fa-book"></i><span>Guruhlar</span></a>
+    <a href="/admin-question"><i class="fas fa-question-circle"></i><span>Savollar ?</span></a>
     
 
 
